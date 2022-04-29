@@ -1,0 +1,10 @@
+.logo__contacts
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo__contact:not(:last-child)
+{
+    margin-right: 5px;
+}
