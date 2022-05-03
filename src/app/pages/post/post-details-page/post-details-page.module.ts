@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomePageComponent } from './home-page.component';
+import { PostDetailsPageRoutingModule } from './post-details-page-routing.module';
+import { PostDetailsPageComponent } from './post-details-page.component';
 import { PostModule } from 'src/app/features/post/post.module';
-import { HomePageRoutingModule } from './home-page-routing.module';
 import { HeaderModule } from 'src/app/features/header/header.module';
 import { FooterModule } from 'src/app/features/footer/footer.module';
 import { CategoryModule } from 'src/app/features/category/category.module';
 
 @NgModule({
   declarations: [
-    HomePageComponent
+    PostDetailsPageComponent
   ],
   imports: [
     CommonModule,
-    HomePageRoutingModule,
-    CategoryModule,
+    PostDetailsPageRoutingModule,
+    PostModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    CategoryModule
   ],
   exports: [
-    HomePageComponent
+    PostDetailsPageComponent
   ]
 })
-export class HomePageModule { }
+export class PostDetailsPageModule { }

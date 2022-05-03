@@ -1,4 +1,11 @@
-.home-page-item:not(:last-child)
+.section__title
 {
-    margin-bottom: 100px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .section__title
+    {
+        text-align: center;
+    }
 }

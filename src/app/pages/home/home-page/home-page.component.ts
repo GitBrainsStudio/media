@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'src/app/features/category/models/category.model';
+import { CategoryService } from 'src/app/features/category/services/category.service';
 
 @Component({
   selector: 'app-home-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  categories:Category[] | null = null;
+
+  constructor(private categoryService:CategoryService) { }
 
   ngOnInit(): void {
+    this.categoryService.getAll()
+      .subscribe(categories => this.categories = categories);
   }
-
 }

@@ -1,17 +1,19 @@
-.text-link
+.post-viewer
+{
+    min-height: 300px;
+    line-height: 1.8em;
+}
+
+a
 {
     text-decoration: none;
     transition: 800ms;
     word-break: break-all;
-}
-
-.text-link--blue
-{
     color: var(--blue);
     border-bottom: 1px solid var(--blue-100);
 }
 
-.text-link:hover
+a:hover
 {
     cursor: pointer;
     color: var(--orange-800);

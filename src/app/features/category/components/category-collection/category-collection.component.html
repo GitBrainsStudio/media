@@ -1,0 +1,130 @@
+<div class="category-collection" *ngIf="categories; else skeleton;" @opacityAnimation>
+    <div class="category" *ngFor="let category of categories;">
+        <span class="category__title tag">
+            {{ category.name }}
+        </span>
+        <ul class="category__post-preview-cards">
+            <li class="category__post-preview-card" *ngFor="let postPreview of category.posts">
+                <app-post-preview-card [postPreview]="postPreview"></app-post-preview-card>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ng-template #skeleton>
+    <div class="category-collection" @opacityAnimation>
+        <div class="category">
+            <span class="category__title">
+                <ngx-skeleton-loader [theme]="{
+                    width: '80px',
+                    'border-radius': '10px',
+                    height: '20px',
+                    'margin-bottom': '10px'
+                  }"></ngx-skeleton-loader>
+            </span>
+            <ul class="category__post-preview-cards">
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '200px',
+                        'border-radius': '10px',
+                        height: '20px',
+                        'margin-bottom': '10px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '140px',
+                        'border-radius': '10px',
+                        height: '20px',
+                        'margin-bottom': '10px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '140px',
+                        'border-radius': '10px',
+                        height: '20px',
+                        'margin-bottom': '10px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '100px',
+                        'border-radius': '10px',
+                        height: '20px',
+                        'margin-bottom': '10px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '300px',
+                        'border-radius': '10px',
+                        height: '20px',
+                        'margin-bottom': '10px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '140px',
+                        'border-radius': '10px',
+                        height: '20px',
+                        'margin-bottom': '10px'
+                      }"></ngx-skeleton-loader>
+                </li>
+            </ul>
+        </div>
+        <div class="category">
+            <span class="category__title">
+                <ngx-skeleton-loader [theme]="{
+                    width: '80px',
+                    'border-radius': '10px',
+                    height: '20px'
+                  }"></ngx-skeleton-loader>
+            </span>
+            <ul class="category__post-preview-cards">
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '200px',
+                        'border-radius': '10px',
+                        height: '20px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '140px',
+                        'border-radius': '10px',
+                        height: '20px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '140px',
+                        'border-radius': '10px',
+                        height: '20px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '100px',
+                        'border-radius': '10px',
+                        height: '20px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '300px',
+                        'border-radius': '10px',
+                        height: '20px'
+                      }"></ngx-skeleton-loader>
+                </li>
+                <li class="category__post-preview-card">
+                    <ngx-skeleton-loader [theme]="{
+                        width: '140px',
+                        'border-radius': '10px',
+                        height: '20px'
+                      }"></ngx-skeleton-loader>
+                </li>
+            </ul>
+        </div>
+    </div>
+</ng-template>

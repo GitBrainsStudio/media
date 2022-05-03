@@ -1,0 +1,42 @@
+.category__post-preview-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.category__post-preview-card
+{
+    margin-bottom: 5px;
+}
+
+.category__post-preview-card:not(:last-child)
+{
+    margin-right: 10px;
+}
+
+.category__title
+{
+    margin-bottom: 5px;
+}
+
+.category:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+/* @media screen and (max-width: 576px) {
+
+    .category
+    {
+        text-align: center;
+    }
+
+    .category__post-preview-cards
+    {
+        display: block;
+        justify-content: center;
+    }
+} */

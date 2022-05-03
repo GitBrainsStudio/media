@@ -1,10 +1,15 @@
+
 <main class="page">
     <div class="page-section">
         <app-header></app-header>
     </div>
-    
+
     <div class="container page-section">
-        <h1 class="page-section__title">Блог</h1>
+        <app-post-viewer [src]="src"></app-post-viewer>
+    </div>
+
+    <div class="container page-section">
+        <h4 class="page-section__title page-section__title--small" *ngIf="categories && categories.length > 0">Другие статьи</h4>
         <div class="page-section__content">
             <app-category-collection [categories]="categories"></app-category-collection>
         </div>

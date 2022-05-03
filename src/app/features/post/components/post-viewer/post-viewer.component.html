@@ -1,0 +1,9 @@
+<div class="post-viewer">
+    <markdown 
+    [src]="src" 
+    (load)="onLoad()" 
+    (error)="onError()" 
+    *ngIf="src;" 
+    [ngClass]="{'post-viewer--hidden' : isLoading }"
+    @opacityAnimation></markdown>
+</div>

@@ -1,7 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
 @import url('assets/styles/link.scss');
 @import url('assets/styles/tag.scss');
-@import url('assets/styles/logo.scss');
+@import url('assets/styles/page.scss');
+@import url('assets/styles/pre.scss');
+@import url('assets/styles/post-viewer.scss');
+@import url('assets/styles/breadcrumb.scss');
 
 :root
 {
@@ -91,8 +93,8 @@
     --red-800: hsl(358,64%,35%);
     --red-900: hsl(358,67%,29%);
 
-    --header-height: 80px;
-    --footer-height: 60px;
+    --header-height: 40px;
+    --footer-height: 50px;
     --main-margin-bottom: 100px;
 }
 
@@ -105,17 +107,18 @@ body
 
 h1,h2,h3,h4,h5,h6
 {
+    margin: 0;
     line-height: 1.2em;
-    -webkit-margin-before: 0.83em;
-    margin-block-start: 0.83em;
-    -webkit-margin-after: 0.83em;
-    margin-block-end: 0.83em;
-    margin: 0 0 0.2em;
+}
+
+ul
+{
+    padding: 0;
 }
 
 main
 {
-    min-height: calc(100vh - var(--footer-height) - var(--main-margin-bottom));
+    min-height: calc(100vh - var(--footer-height) - var(--main-margin-bottom) - 1px);
     margin-bottom: var(--main-margin-bottom);
 }
 

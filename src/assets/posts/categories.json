@@ -1,0 +1,15 @@
+[
+    {
+        "name" : "C#",
+        "posts": [
+                    {
+                        "id": "dapper-base-repository",
+                        "name": "Практичная реализация BaseRepository вместе с Dapper"
+                    },
+                    {
+                        "id": "csharp-logger-class",
+                        "name": "Эффективное логирование событий в текстовый файл"
+                    }
+                 ]
+    }
+]
