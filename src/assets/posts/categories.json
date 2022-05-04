@@ -9,6 +9,10 @@
                     {
                         "id": "csharp-logger-class",
                         "name": "Эффективное логирование событий в текстовый файл"
+                    },
+                    {
+                        "id" : "dapper-unit-of-work",
+                        "name" : "Паттерн UnitOfWork совместно с Dapper"
                     }
                  ]
     }
