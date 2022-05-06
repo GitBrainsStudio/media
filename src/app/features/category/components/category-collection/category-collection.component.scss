@@ -1,3 +1,18 @@
+.category-collection
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .category__post-preview-cards
 {
     display: flex;
@@ -5,38 +20,5 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 5px;
 }
-
-.category__post-preview-card
-{
-    margin-bottom: 5px;
-}
-
-.category__post-preview-card:not(:last-child)
-{
-    margin-right: 10px;
-}
-
-.category__title
-{
-    margin-bottom: 5px;
-}
-
-.category:not(:last-child)
-{
-    margin-bottom: 10px;
-}
-
-/* @media screen and (max-width: 576px) {
-
-    .category
-    {
-        text-align: center;
-    }
-
-    .category__post-preview-cards
-    {
-        display: block;
-        justify-content: center;
-    }
-} */
