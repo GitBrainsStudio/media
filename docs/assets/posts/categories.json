@@ -24,5 +24,14 @@
                         "name": "Как сделать квадратный аутлайн, если фокусируемый блок не квадратный"
                     }
                  ]
+    },
+    {
+        "name" : "Angular",
+        "posts": [
+                    {
+                        "id": "angular-reloading-components-when-change-in-route-params",
+                        "name": "Обновление компонента при смене маршрута"
+                    }
+                 ]
     }
 ]
