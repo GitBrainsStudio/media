@@ -1,0 +1,28 @@
+[
+    {
+        "name" : "C#",
+        "posts": [
+                    {
+                        "id": "dapper-base-repository",
+                        "name": "Практичная реализация BaseRepository вместе с Dapper"
+                    },
+                    {
+                        "id": "csharp-logger-class",
+                        "name": "Эффективное логирование событий в текстовый файл"
+                    },
+                    {
+                        "id" : "dapper-unit-of-work",
+                        "name" : "Паттерн UnitOfWork совместно с Dapper"
+                    }
+                 ]
+    },
+    {
+        "name" : "CSS",
+        "posts": [
+                    {
+                        "id": "css-square-outline",
+                        "name": "Как сделать квадратный аутлайн, если фокусируемый блок не квадратный"
+                    }
+                 ]
+    }
+]

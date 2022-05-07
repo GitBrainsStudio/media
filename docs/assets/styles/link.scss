@@ -1,0 +1,19 @@
+.text-link
+{
+    text-decoration: none;
+    transition: 800ms;
+    word-break: break-word;
+}
+
+.text-link--blue
+{
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue-100);
+}
+
+.text-link:hover
+{
+    cursor: pointer;
+    color: var(--orange-800);
+    transition: 200ms;
+}

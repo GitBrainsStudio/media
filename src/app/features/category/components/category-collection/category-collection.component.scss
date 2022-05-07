@@ -1,0 +1,24 @@
+.category-collection
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category__post-preview-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 5px;
+}

@@ -1,0 +1,29 @@
+.custom-bread-crumb 
+{
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+.custom-bread-crumb li 
+{
+    display: inline;
+    font-size: 14px !important;
+}
+.custom-bread-crumb .line 
+{
+    padding-right: 3px;
+}
+.custom-bread-crumb li a 
+{
+    text-decoration: none;
+    transition: 800ms;
+    word-break: break-all;
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue-100);
+}
+.custom-bread-crumb li a:hover 
+{
+    cursor: pointer;
+    color: var(--orange-800) !important;
+    transition: 200ms !important;
+    text-decoration: none !important;
+}
