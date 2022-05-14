@@ -31,6 +31,10 @@
                     {
                         "id": "angular-reloading-components-when-change-in-route-params",
                         "name": "Обновление компонента при смене маршрута"
+                    },
+                    {
+                        "id": "angular-icon-service",
+                        "name": "Использование кастомных svg иконок совместно с material-icon"
                     }
                  ]
     }
