@@ -13,6 +13,10 @@
                     {
                         "id" : "dapper-unit-of-work",
                         "name" : "Паттерн UnitOfWork совместно с Dapper"
+                    },
+                    {
+                        "id" : "wpf-dependency-injection",
+                        "name" : "Внедрение Dependency Injection в приложение WPF"
                     }
                  ]
     },
