@@ -1,0 +1,114 @@
+.project-preview-card
+{
+    border-radius: 15px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: width .8s ease;
+    position: relative;
+}
+
+.project-preview-card__tags
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.project-preview-card__image-wrapper
+{
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    position: relative;
+    max-height: 400px;
+}
+
+.project-preview-card__image
+{
+    width: 100%;
+    transition: transform .5s ease, opacity .5s ease;
+}
+
+.project-preview-card__image-threads
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-preview-card__image-thread
+{
+    width: 120px;
+}
+
+.project-preview-card__short-description
+{
+    margin: 0;
+    line-height: 1.3em;
+}
+
+.project-preview-card__info-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.project-preview-card__short-description,
+.project-preview-card__tags
+{
+    pointer-events: none;
+}
+
+.project-preview-card__row
+{
+    display: flex;
+    align-items: center;
+}
+
+.project-preview-card__github-logo
+{
+    width: 20px;
+    height: 20px;
+}
+
+.project-preview-card:hover .project-preview-card__image
+{
+    transform: scale(1.5);
+    opacity: .1;
+}
+
+.project-preview-card:hover .project-preview-card__image-threads
+{
+    opacity: 1;
+}
+
+.project-preview-card__repository-link::after 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .project-preview-card
+    {
+        width: 100%;
+    }
+
+}

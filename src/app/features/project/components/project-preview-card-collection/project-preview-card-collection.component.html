@@ -1,0 +1,34 @@
+<ul class="project-preview-card-collection" *ngIf="projects; else skeleton" @opacityAnimation>
+    <li class="project-preview-card-collection__item" *ngFor="let project of projects">
+        <app-project-preview-card [project]="project"></app-project-preview-card>
+    </li>
+</ul>
+
+<ng-template #skeleton>
+    <ul class="project-preview-card-collection" @opacityAnimation>
+        <li class="project-preview-card-collection__item">
+            <ngx-skeleton-loader [theme]="{
+                width: '240px',
+                'border-radius': '15px',
+                height: '300px',
+                'margin-bottom': '0'
+              }"></ngx-skeleton-loader>
+        </li>
+        <li class="project-preview-card-collection__item">
+            <ngx-skeleton-loader [theme]="{
+                width: '240px',
+                'border-radius': '15px',
+                height: '300px',
+                'margin-bottom': '0'
+              }"></ngx-skeleton-loader>
+        </li>
+        <li class="project-preview-card-collection__item">
+            <ngx-skeleton-loader [theme]="{
+                width: '240px',
+                'border-radius': '15px',
+                height: '300px',
+                'margin-bottom': '0'
+              }"></ngx-skeleton-loader>
+        </li>
+    </ul>
+</ng-template>

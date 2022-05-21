@@ -92,10 +92,10 @@
     --red-700: hsl(358,64%,41%);
     --red-800: hsl(358,64%,35%);
     --red-900: hsl(358,67%,29%);
-
     --header-height: 60px;
     --footer-height: 50px;
     --main-margin-bottom: 100px;
+    --main-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 body
@@ -128,5 +128,5 @@ main
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 800px;
+    max-width: 1000px;
 }

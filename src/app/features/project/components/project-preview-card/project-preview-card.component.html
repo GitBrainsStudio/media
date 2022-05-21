@@ -1,0 +1,25 @@
+<article class="project-preview-card" *ngIf="project">
+    <div class="project-preview-card__image-wrapper">
+        <img [src]="project.image" class="project-preview-card__image">
+        <div class="project-preview-card__image-threads">
+            <img [src]="thread.url" class="project-preview-card__image-thread" *ngFor="let thread of project.threads">
+        </div>
+    </div>
+    <div class="project-preview-card__info-wrapper">
+        <div class="project-preview-card__row">
+            <h3 class="project-preview-card__name">
+                <a href="#" [href]="project.repository" class="project-preview-card__repository-link" target="_blank">
+                    {{ project.name }}
+                </a>
+            </h3>
+        </div>
+        <p class="project-preview-card__short-description">
+            {{ project.shortDescription }}
+        </p>
+        <div class="project-preview-card__tags">
+            <span class="tag" *ngFor="let tag of project.tags">
+                {{ tag.name }}
+            </span>
+        </div>
+    </div>
+</article>
