@@ -26,14 +26,19 @@ export class HomePageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    forkJoin(
-      this.categoryService.getAll(), 
-      this.projectService.getAll())
+
+    this.categoryService.getAll()
     .pipe(takeUntil(this.destroy))
-    .subscribe(([categories,projects]) => 
+    .subscribe(categories => 
       {
         this.categories = categories;
+      });
+
+    this.projectService.getAll()
+    .pipe(takeUntil(this.destroy))
+    .subscribe(projects => 
+      {
         this.projects = projects;
-      }) 
+      });
   }
 }
