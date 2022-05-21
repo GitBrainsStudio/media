@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { forkJoin, mergeMap } from 'rxjs';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { forkJoin, mergeMap, ReplaySubject, takeUntil } from 'rxjs';
 import { Category } from 'src/app/features/category/models/category.model';
 import { CategoryService } from 'src/app/features/category/services/category.service';
 import { Project } from 'src/app/features/project/models/project';
@@ -10,8 +10,9 @@ import { ProjectService } from 'src/app/features/project/services/project.servic
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent implements OnInit, OnDestroy {
 
+  destroy: ReplaySubject<any> = new ReplaySubject<any>(1);
   categories:Category[] | null = null;
   projects:Project[] | null = null;
 
@@ -19,14 +20,20 @@ export class HomePageComponent implements OnInit {
     private categoryService:CategoryService,
     private projectService:ProjectService) { }
 
+  ngOnDestroy(): void {
+    this.destroy.next(null);
+    this.destroy.complete();
+  }
+
   ngOnInit(): void {
     forkJoin(
       this.categoryService.getAll(), 
       this.projectService.getAll())
+    .pipe(takeUntil(this.destroy))
     .subscribe(([categories,projects]) => 
       {
         this.categories = categories;
         this.projects = projects;
-      })
+      }) 
   }
 }

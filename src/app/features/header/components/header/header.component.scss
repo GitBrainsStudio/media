@@ -57,6 +57,17 @@
     object-fit: cover;
 }
 
+.header__column--home-link
+{
+    transition: opacity .4s ease;
+}
+
+.header__column--home-link:hover
+{
+    cursor: pointer;
+    opacity: .9;
+}
+
 
 @media screen and (max-width:576px) {
 
