@@ -1,7 +1,7 @@
 .project-preview-card
 {
     border-radius: 15px;
-    width: 320px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     transition: width .8s ease;
@@ -13,7 +13,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
+}
+
+.project-preview-card__tag
+{
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .project-preview-card__image-wrapper
@@ -43,7 +48,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
 }
 
 .project-preview-card__image-thread
@@ -51,17 +55,22 @@
     width: 120px;
 }
 
+.project-preview-card__image-thread:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
 .project-preview-card__short-description
 {
     margin: 0;
     line-height: 1.3em;
+    margin-bottom: 10px;
 }
 
 .project-preview-card__info-wrapper
 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 10px;
 }
 
@@ -75,6 +84,7 @@
 {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .project-preview-card__github-logo

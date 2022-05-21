@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { forkJoin, mergeMap } from 'rxjs';
 import { Category } from 'src/app/features/category/models/category.model';
 import { CategoryService } from 'src/app/features/category/services/category.service';
 import { Project } from 'src/app/features/project/models/project';
@@ -19,10 +20,13 @@ export class HomePageComponent implements OnInit {
     private projectService:ProjectService) { }
 
   ngOnInit(): void {
-    this.categoryService.getAll()
-      .subscribe(categories => this.categories = categories);
-
-    this.projectService.getAll()
-      .subscribe(projects => this.projects = projects);
+    forkJoin(
+      this.categoryService.getAll(), 
+      this.projectService.getAll())
+    .subscribe(([categories,projects]) => 
+      {
+        this.categories = categories;
+        this.projects = projects;
+      })
   }
 }
