@@ -2,7 +2,6 @@
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .category
@@ -10,7 +9,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.category__row
+{
+    margin-bottom: 5px;
 }
 
 .category__post-preview-cards
@@ -20,5 +24,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 5px;
+}
+
+.category__post-preview-card
+{
+    margin-right: 10px;
+    margin-bottom: 5px;
 }

@@ -54,6 +54,18 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.header__column--home-link
+{
+    transition: opacity .4s ease;
+}
+
+.header__column--home-link:hover
+{
+    cursor: pointer;
+    opacity: .9;
 }
 
 

@@ -2,12 +2,21 @@
     <div class="page-section">
         <app-header></app-header>
     </div>
-    
-    <div class="container page-section">
-        <h1 class="page-section__title">Блог</h1>
+
+    <section class="container page-section">
+        <h1 class="page-section__title">Заметки</h1>
+        <p class="page-section__description">Иногда сюда что-то добавляется 👋</p>
         <div class="page-section__content">
             <app-category-collection [categories]="categories"></app-category-collection>
         </div>
-    </div>
+    </section>
+
+    <section class="container page-section">
+        <h1 class="page-section__title">Проекты</h1>
+        <p class="page-section__description">Список последних проектов, над которыми я работал 🔩</p>
+        <div class="page-section__content">
+            <app-project-preview-card-collection [projects]="projects"></app-project-preview-card-collection>
+        </div>
+    </section>
 </main>
 <app-footer></app-footer>

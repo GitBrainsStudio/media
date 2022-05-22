@@ -1,0 +1,35 @@
+.project-preview-card-collection
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-preview-card-collection__item
+{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.project-preview-card-collection__item--skeleton
+{
+    width: 310px;
+}
+
+
+@media screen and (max-width: 576px) 
+{
+    .project-preview-card-collection__item--skeleton
+    {
+        width: 100%;
+    }
+
+    .project-preview-card-collection__item
+    {
+        margin-right: 0;
+        width: 100%;
+    }
+}

@@ -4,7 +4,6 @@
 @import url('assets/styles/pre.scss');
 @import url('assets/styles/post-viewer.scss');
 @import url('assets/styles/breadcrumb.scss');
-@import url('assets/styles/img.scss');
 
 :root
 {
@@ -93,10 +92,10 @@
     --red-700: hsl(358,64%,41%);
     --red-800: hsl(358,64%,35%);
     --red-900: hsl(358,67%,29%);
-
     --header-height: 60px;
     --footer-height: 50px;
     --main-margin-bottom: 100px;
+    --main-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 body

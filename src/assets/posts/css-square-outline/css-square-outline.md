@@ -73,4 +73,4 @@ body {
 
 Продублировано на CodePen: <https://codepen.io/GitBrains/pen/JjpGWQM>
 
-Продублировано в zip архиве: <https://gitbrainsstudio.github.io/media/assets/posts/css-square-outline/sqare-outline.zip>
+Продублировано в zip архиве: <https://gitbrainsstudio.github.io/media/assets/posts/css-square-outline/css-square-outline.zip>

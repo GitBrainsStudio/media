@@ -6,6 +6,7 @@ import { HomePageRoutingModule } from './home-page-routing.module';
 import { HeaderModule } from 'src/app/features/header/header.module';
 import { FooterModule } from 'src/app/features/footer/footer.module';
 import { CategoryModule } from 'src/app/features/category/category.module';
+import { ProjectModule } from 'src/app/features/project/project.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryModule } from 'src/app/features/category/category.module';
     HomePageRoutingModule,
     CategoryModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    ProjectModule
   ],
   exports: [
     HomePageComponent
