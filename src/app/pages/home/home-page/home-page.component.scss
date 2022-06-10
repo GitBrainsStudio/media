@@ -5,7 +5,8 @@
 }
 
 @media screen and (max-width: 576px) {
-    .section__title
+    .page-section__title,
+    .page-section__description
     {
         text-align: center;
     }
