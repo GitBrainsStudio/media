@@ -5,6 +5,12 @@
 }
 
 @media screen and (max-width: 576px) {
+
+    .page-section__content
+    {
+        width: 100%;
+    }
+
     .page-section__title,
     .page-section__description
     {
