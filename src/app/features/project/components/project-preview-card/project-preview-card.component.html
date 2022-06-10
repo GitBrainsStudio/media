@@ -1,25 +1,36 @@
 <article class="project-preview-card" *ngIf="project">
     <div class="project-preview-card__image-wrapper">
         <img [src]="project.image" class="project-preview-card__image">
-        <div class="project-preview-card__image-threads">
-            <img [src]="thread.url" class="project-preview-card__image-thread" *ngFor="let thread of project.threads">
-        </div>
-    </div>
-    <div class="project-preview-card__info-wrapper">
-        <div class="project-preview-card__row">
-            <h3 class="project-preview-card__name">
-                <a href="#" [href]="project.repository" class="project-preview-card__repository-link" target="_blank">
-                    {{ project.name }}
-                </a>
-            </h3>
-        </div>
-        <p class="project-preview-card__short-description">
-            {{ project.shortDescription }}
-        </p>
-        <div class="project-preview-card__tags">
-            <span class="tag project-preview-card__tag" *ngFor="let tag of project.tags">
-                {{ tag.name }}
-            </span>
+        <div class="project-preview-card__info">
+            <div class="project-preview-card__info-wrapper">
+                <div class="project-preview-card__row">
+                    <div class="project-preview-card__image-thread-wrapper" *ngFor="let thread of project.threads; let i = index;">
+                        <img [src]="thread.url" class="project-preview-card__image-thread"> 
+                        <span class="project-preview-card__image-thread-plus" *ngIf="i != project.threads.length - 1;">+</span>
+                    </div>
+                </div>
+                <div class="project-preview-card__row">
+                    <h3 class="project-preview-card__name">
+                        {{ project.name }}
+                    </h3>
+                </div>
+                <p class="project-preview-card__short-description" *ngIf="project.shortDescription">
+                    {{ project.shortDescription }}
+                </p>
+                <div class="project-preview-card__tags">
+                    <span class="tag project-preview-card__tag" *ngFor="let tag of project.tags">
+                        {{ tag.name }}
+                    </span>
+                </div>
+                <div class="project-preview-card__links">
+                    <a href="#" [href]="project.repository" class="project-preview-card__link" target="_blank">
+                        Репозиторий
+                    </a>
+                    <a href="#" [href]="project.demo" class="project-preview-card__link" target="_blank" *ngIf="project.demo">
+                        Демо
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </article>

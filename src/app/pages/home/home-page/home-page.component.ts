@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { forkJoin, mergeMap, ReplaySubject, takeUntil } from 'rxjs';
 import { Category } from 'src/app/features/category/models/category.model';
 import { CategoryService } from 'src/app/features/category/services/category.service';
@@ -20,10 +20,12 @@ export class HomePageComponent implements OnInit, OnDestroy {
     private categoryService:CategoryService,
     private projectService:ProjectService) { }
 
+
   ngOnDestroy(): void {
     this.destroy.next(null);
     this.destroy.complete();
   }
+
 
   ngOnInit(): void {
 

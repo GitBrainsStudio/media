@@ -31,3 +31,20 @@
     margin-right: 10px;
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 576px) 
+{
+    .category
+    {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .category__post-preview-cards
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
