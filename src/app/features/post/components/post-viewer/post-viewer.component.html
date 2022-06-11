@@ -6,4 +6,13 @@
     *ngIf="src;" 
     [ngClass]="{'post-viewer--hidden' : isLoading }"
     @opacityAnimation></markdown>
+    <ngx-skeleton-loader 
+    *ngIf="isLoading" 
+    @opacityAnimation
+    [theme]="{
+        width: '100%',
+        'border-radius': '10px',
+        height: '500px',
+        'margin-bottom': '5px'
+      }"></ngx-skeleton-loader>
 </div>
