@@ -80,7 +80,7 @@
 
 body
 {
-  background: var(--orange);
+      background: var(--orange);
 }
 
 .container
