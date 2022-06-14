@@ -9,4 +9,5 @@ export interface Project
     threads:Thread[];
     tags:Tag[];
     repository:string;
+    demo:string;
 }

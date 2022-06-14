@@ -95,5 +95,21 @@
         ],
         "shortDescription": "Сайт на котором Вы сейчас находитесь с фейковый бэком на маркдаунах",
         "repository" : "https://github.com/GitBrainsStudio/media"
+    },
+    {
+        "name" : "Lagoona",
+        "tags" : [
+            {
+                "name" : "Angular"
+            }
+        ],
+        "image" : "assets/projects/images/previews/lagoona.jpg",
+        "threads" : [
+            {
+                "url" : "assets/projects/images/threads/angular.png"
+            }
+        ],
+        "repository" : "https://github.com/GitBrainsStudio/media",
+        "demo" : "https://gitbrainsstudio.github.io/lagoona/#/"
     }
 ]

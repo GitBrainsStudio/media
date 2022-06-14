@@ -5,8 +5,35 @@
 }
 
 @media screen and (max-width: 576px) {
-    .section__title
+
+    .page-section__content
     {
+        width: 100%;
+    }
+
+    .page-section__title,
+    .page-section__description
+    {
+        text-align: center;
+    }
+    .page-section--mobile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-section__content ::ng-deep .category
+    {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .page-section__content ::ng-deep .category__post-preview-cards
+    {
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 }

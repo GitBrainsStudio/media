@@ -11,6 +11,7 @@ import { OPACITY_ANIMATION } from 'src/app/features/animation/triggers/opacity.t
 export class PostViewerComponent implements OnInit {
 
   @Input() src:string | null = null;
+  @Output() load = new EventEmitter<boolean>();
   isLoading:boolean = true;
 
   constructor(
@@ -24,6 +25,7 @@ export class PostViewerComponent implements OnInit {
   onLoad()
   {
     this.isLoading = false;
+    this.load.next(true);
   }
 
   onError()
