@@ -30,6 +30,10 @@
                     {
                         "id": "css-svg-icon-stylization",
                         "name": "Стилизация инлайновых svg иконок"
+                    },
+                    {
+                        "id": "css-arrow-link-animation",
+                        "name": "Реализация анимации arrow link"
                     }
                  ]
     },
