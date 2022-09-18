@@ -47,6 +47,10 @@
                     {
                         "id": "angular-icon-service",
                         "name": "Использование кастомных svg иконок совместно с material-icon"
+                    },
+                    {
+                        "id" : "angular-configure-eslint-and-prettier",
+                        "name" : "Конфигурация ESlint & Prettier"
                     }
                  ]
     },
