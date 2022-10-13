@@ -51,6 +51,22 @@
                     {
                         "id" : "angular-configure-eslint-and-prettier",
                         "name" : "Конфигурация ESLint & Prettier"
+                    },
+                    {
+                        "id" : "angular-scroll-position-restoration",
+                        "name" : "Авто-скролл страницы вверх после смены роута"
+                    },
+                    {
+                        "id" : "angular-fade-in-out-animation",
+                        "name" : "Анимация появления элементов"
+                    },
+                    {
+                        "id" : "angular-outside-click-directive",
+                        "name" : "Директива для обработки клика вне элемента"
+                    },
+                    {
+                        "id" : "angular-scroller-service",
+                        "name" : "Плавный скролл к необходимому элементу через службу"
                     }
                  ]
     },
