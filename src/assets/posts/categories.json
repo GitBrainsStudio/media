@@ -76,6 +76,10 @@
                     {
                         "id": "python-sqlalchemy-orm-connection",
                         "name": "Подключение SQLAlchemy ORM"
+                    },
+                    {
+                        "id": "python-alembic-sqlalchemy-orm",
+                        "name": "Настраиваем Alembic для работы совместно с SQLAlchemy ORM"
                     }
                  ]
     }
