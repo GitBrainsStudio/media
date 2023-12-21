@@ -91,5 +91,26 @@
         "name": "Как сделать форматирование кода с помощью Prettier в Visual Studio Code"
       }
     ]
+  },
+  {
+    "name": "Docker",
+    "posts": [
+      {
+        "id": "docker-angular-simple-dockerfile",
+        "name": "Докерфайл Angular приложения"
+      },
+      {
+        "id": "docker-python-simple-dockerfile",
+        "name": "Докерфайл Python приложения"
+      },
+      {
+        "id": "docker-compose-fullstack-simple-yml",
+        "name": "Базовый docker-compose.yml фулстэк проекта"
+      },
+      {
+        "id": "docker-build-image-github-action",
+        "name": "Build Docker image (GitHub action)"
+      }
+    ]
   }
 ]
