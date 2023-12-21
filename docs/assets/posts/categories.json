@@ -1,58 +1,116 @@
 [
-    {
-        "name" : "C#",
-        "posts": [
-                    {
-                        "id": "dapper-base-repository",
-                        "name": "Практичная реализация BaseRepository вместе с Dapper"
-                    },
-                    {
-                        "id": "csharp-logger-class",
-                        "name": "Эффективное логирование событий в текстовый файл"
-                    },
-                    {
-                        "id" : "dapper-unit-of-work",
-                        "name" : "Паттерн UnitOfWork совместно с Dapper"
-                    },
-                    {
-                        "id" : "wpf-dependency-injection",
-                        "name" : "Внедрение Dependency Injection в приложение WPF"
-                    }
-                 ]
-    },
-    {
-        "name" : "CSS",
-        "posts": [
-                    {
-                        "id": "css-square-outline",
-                        "name": "Как сделать квадратный аутлайн, если фокусируемый блок не квадратный"
-                    },
-                    {
-                        "id": "css-svg-icon-stylization",
-                        "name": "Стилизация инлайновых svg иконок"
-                    }
-                 ]
-    },
-    {
-        "name" : "Angular",
-        "posts": [
-                    {
-                        "id": "angular-reloading-components-when-change-in-route-params",
-                        "name": "Обновление компонента при смене маршрута"
-                    },
-                    {
-                        "id": "angular-icon-service",
-                        "name": "Использование кастомных svg иконок совместно с material-icon"
-                    }
-                 ]
-    },
-    {
-        "name" : "Python",
-        "posts": [
-                    {
-                        "id": "python-sqlalchemy-orm-connection",
-                        "name": "Подключение SQLAlchemy ORM"
-                    }
-                 ]
-    }
+  {
+    "name": "C#",
+    "posts": [
+      {
+        "id": "dapper-base-repository",
+        "name": "Практичная реализация BaseRepository вместе с Dapper"
+      },
+      {
+        "id": "csharp-logger-class",
+        "name": "Эффективное логирование событий в текстовый файл"
+      },
+      {
+        "id": "dapper-unit-of-work",
+        "name": "Паттерн UnitOfWork совместно с Dapper"
+      },
+      {
+        "id": "wpf-dependency-injection",
+        "name": "Внедрение Dependency Injection в приложение WPF"
+      }
+    ]
+  },
+  {
+    "name": "CSS",
+    "posts": [
+      {
+        "id": "css-square-outline",
+        "name": "Как сделать квадратный аутлайн, если фокусируемый блок не квадратный"
+      },
+      {
+        "id": "css-svg-icon-stylization",
+        "name": "Стилизация инлайновых svg иконок"
+      },
+      {
+        "id": "css-arrow-link-animation",
+        "name": "Реализация анимации arrow link"
+      }
+    ]
+  },
+  {
+    "name": "Angular",
+    "posts": [
+      {
+        "id": "angular-reloading-components-when-change-in-route-params",
+        "name": "Обновление компонента при смене маршрута"
+      },
+      {
+        "id": "angular-icon-service",
+        "name": "Использование кастомных svg иконок совместно с material-icon"
+      },
+      {
+        "id": "angular-configure-eslint-and-prettier",
+        "name": "Конфигурация ESLint & Prettier"
+      },
+      {
+        "id": "angular-scroll-position-restoration",
+        "name": "Авто-скролл страницы вверх после смены роута"
+      },
+      {
+        "id": "angular-fade-in-out-animation",
+        "name": "Анимация появления элементов"
+      },
+      {
+        "id": "angular-outside-click-directive",
+        "name": "Директива для обработки клика вне элемента"
+      },
+      {
+        "id": "angular-scroller-service",
+        "name": "Плавный скролл к необходимому элементу через службу"
+      }
+    ]
+  },
+  {
+    "name": "Python",
+    "posts": [
+      {
+        "id": "python-sqlalchemy-orm-connection",
+        "name": "Подключение SQLAlchemy ORM"
+      },
+      {
+        "id": "python-alembic-sqlalchemy-orm",
+        "name": "Настраиваем Alembic для работы совместно с SQLAlchemy ORM"
+      }
+    ]
+  },
+  {
+    "name": "IDE",
+    "posts": [
+      {
+        "id": "prettier-formatter-for-vs-code",
+        "name": "Как сделать форматирование кода с помощью Prettier в Visual Studio Code"
+      }
+    ]
+  },
+  {
+    "name": "Docker",
+    "posts": [
+      {
+        "id": "docker-angular-simple-dockerfile",
+        "name": "Докерфайл Angular приложения"
+      },
+      {
+        "id": "docker-python-simple-dockerfile",
+        "name": "Докерфайл Python приложения"
+      },
+      {
+        "id": "docker-compose-fullstack-simple-yml",
+        "name": "Базовый docker-compose.yml фулстэк проекта"
+      },
+      {
+        "id": "docker-build-image-github-action",
+        "name": "Build Docker image (GitHub action)"
+      }
+    ]
+  }
 ]
