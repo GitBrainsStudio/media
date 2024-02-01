@@ -110,6 +110,10 @@
       {
         "id": "docker-build-image-github-action",
         "name": "Build Docker image (GitHub action)"
+      },
+      {
+        "id": "docker-compose-ssl",
+        "name": "Использование SSL и HTTPS"
       }
     ]
   }
