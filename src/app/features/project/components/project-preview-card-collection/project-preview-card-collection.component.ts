@@ -9,12 +9,9 @@ import { Project } from '../../models/project';
   animations: [OPACITY_ANIMATION]
 })
 export class ProjectPreviewCardCollectionComponent implements OnInit {
+  @Input() projects: Project[] | null = null;
 
-  @Input() projects:Project[] | null = null;
-  
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
