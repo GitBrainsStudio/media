@@ -114,6 +114,10 @@
       {
         "id": "docker-compose-ssl",
         "name": "Использование SSL и HTTPS"
+      },
+      {
+        "id": "docker-ghcr-login",
+        "name": "Авторизация в GitHub Container Registry"
       }
     ]
   }
