@@ -1,115 +1,129 @@
 [
-    {
-        "name" : "NHibernateMapping",
-        "tags" : [
-            {
-                "name" : "C#"
-            },
-            {
-                "name" : "NHibernate"
-            }
-        ],
-        "image" : "assets/projects/images/previews/csharp-nhibernate-mapping.jpg",
-        "threads" : 
-        [
-            {
-                "url": "assets/projects/images/threads/csharp.png"
-            },
-            {
-                "url": "assets/projects/images/threads/nhibernate.png"
-            }
-        ],
-        "shortDescription": "Проект с примером маппинга сущностей NHibernate",
-        "repository" : "https://github.com/GitBrainsStudio/Marketplace_NH"
-    },
-    {
-        "name" : "5kParser",
-        "tags" : [
-            {
-                "name" : "C#"
-            }
-        ],
-        "image" : "assets/projects/images/previews/csharp-5ka-parser.jpg",
-        "threads" : 
-        [
-            {
-                "url": "assets/projects/images/threads/csharp.png"
-            }
-        ],
-        "shortDescription": "Небольшой парсер цен с сайта 5ka",
-        "repository" : "https://github.com/GitBrainsStudio/5kaParserPrices"
-    },
-    {
-        "name" : "Rest API for GTBRNSBLG",
-        "tags" : [
-            {
-                "name" : "Python"
-            },
-            {
-                "name" : "FastAPI"
-            }
-        ],
-        "image" : "assets/projects/images/previews/py-gtbrns-blg-api.jpg",
-        "threads" : [
-            {
-                "url" : "assets/projects/images/threads/python.png"
-            },
-            {
-                "url" : "assets/projects/images/threads/fast-api.png"
-            }
-        ],
-        "shortDescription": "Апишка на питоне по стандартам RESTful",
-        "repository" : "https://github.com/GitBrainsStudio/GTBRNSSTDBLG-API"
-    },
-    {
-        "name" : "StatisticCalculation",
-        "tags" : [
-            {
-                "name" : "C#"
-            },
-            {
-                "name" : "Spire.XLS"
-            }
-        ],
-        "image" : "assets/projects/images/previews/csharp-statistic-calculation.jpg",
-        "threads" : [
-            {
-                "url" : "assets/projects/images/threads/csharp.png"
-            }
-        ],
-        "shortDescription": "Калькулятор статистики для подсчёта символов в файлах различных форматов",
-        "repository" : "https://github.com/GitBrainsStudio/Statistic-Calculation"
-    },
-    {
-        "name" : "Media",
-        "tags" : [
-            {
-                "name" : "Angular"
-            }
-        ],
-        "image" : "assets/projects/images/previews/angular-media.jpg",
-        "threads" : [
-            {
-                "url" : "assets/projects/images/threads/angular.png"
-            }
-        ],
-        "shortDescription": "Сайт на котором Вы сейчас находитесь с фейковым бэком на маркдаунах",
-        "repository" : "https://github.com/GitBrainsStudio/media"
-    },
-    {
-        "name" : "Lagoona",
-        "tags" : [
-            {
-                "name" : "Angular"
-            }
-        ],
-        "image" : "assets/projects/images/previews/lagoona.jpg",
-        "threads" : [
-            {
-                "url" : "assets/projects/images/threads/angular.png"
-            }
-        ],
-        "repository" : "https://github.com/GitBrainsStudio/media",
-        "demo" : "https://gitbrainsstudio.github.io/lagoona/#/"
-    }
+  {
+    "name": "Кресла74.рф",
+    "tags": [
+      {
+        "name": "Angular"
+      }
+    ],
+    "image": "assets/projects/images/previews/kresla74.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/angular.png"
+      }
+    ],
+    "shortDescription": "Онлайн-магазин компьютерных кресел",
+    "demo": "https://кресла74.рф/"
+  },
+  {
+    "name": "Media",
+    "tags": [
+      {
+        "name": "Angular"
+      }
+    ],
+    "image": "assets/projects/images/previews/angular-media.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/angular.png"
+      }
+    ],
+    "shortDescription": "Сайт на котором Вы сейчас находитесь с фейковым бэком на маркдаунах",
+    "repository": "https://github.com/GitBrainsStudio/media"
+  },
+  {
+    "name": "Lagoona",
+    "tags": [
+      {
+        "name": "Angular"
+      }
+    ],
+    "image": "assets/projects/images/previews/lagoona.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/angular.png"
+      }
+    ],
+    "repository": "https://github.com/GitBrainsStudio/media",
+    "demo": "https://gitbrainsstudio.github.io/lagoona/#/"
+  },
+  {
+    "name": "NHibernateMapping",
+    "tags": [
+      {
+        "name": "C#"
+      },
+      {
+        "name": "NHibernate"
+      }
+    ],
+    "image": "assets/projects/images/previews/csharp-nhibernate-mapping.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/csharp.png"
+      },
+      {
+        "url": "assets/projects/images/threads/nhibernate.png"
+      }
+    ],
+    "shortDescription": "Проект с примером маппинга сущностей NHibernate",
+    "repository": "https://github.com/GitBrainsStudio/Marketplace_NH"
+  },
+  {
+    "name": "5kParser",
+    "tags": [
+      {
+        "name": "C#"
+      }
+    ],
+    "image": "assets/projects/images/previews/csharp-5ka-parser.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/csharp.png"
+      }
+    ],
+    "shortDescription": "Небольшой парсер цен с сайта 5ka",
+    "repository": "https://github.com/GitBrainsStudio/5kaParserPrices"
+  },
+  {
+    "name": "Rest API for GTBRNSBLG",
+    "tags": [
+      {
+        "name": "Python"
+      },
+      {
+        "name": "FastAPI"
+      }
+    ],
+    "image": "assets/projects/images/previews/py-gtbrns-blg-api.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/python.png"
+      },
+      {
+        "url": "assets/projects/images/threads/fast-api.png"
+      }
+    ],
+    "shortDescription": "Апишка на питоне по стандартам RESTful",
+    "repository": "https://github.com/GitBrainsStudio/GTBRNSSTDBLG-API"
+  },
+  {
+    "name": "StatisticCalculation",
+    "tags": [
+      {
+        "name": "C#"
+      },
+      {
+        "name": "Spire.XLS"
+      }
+    ],
+    "image": "assets/projects/images/previews/csharp-statistic-calculation.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/csharp.png"
+      }
+    ],
+    "shortDescription": "Калькулятор статистики для подсчёта символов в файлах различных форматов",
+    "repository": "https://github.com/GitBrainsStudio/Statistic-Calculation"
+  }
 ]
