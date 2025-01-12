@@ -21,6 +21,27 @@
     ]
   },
   {
+    "name": "SQL",
+    "posts": [
+      {
+        "id": "sql-last-changes-db",
+        "name": "История изменений в БД"
+      },
+      {
+        "id": "sql-get-constraints",
+        "name": "Получить список ограничений"
+      },
+      {
+        "id": "sql-drop-constraint",
+        "name": "Удалить ограничение"
+      },
+      {
+        "id": "sql-add-column-with-constraint",
+        "name": "Добавить столбец с ограничением"
+      }
+    ]
+  },
+  {
     "name": "CSS",
     "posts": [
       {
