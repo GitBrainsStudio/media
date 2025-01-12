@@ -1,0 +1,5 @@
+# Удалить ограничение
+
+```
+ALTER TABLE <TABLE_NAME> DROP CONSTRAINT <FOREIGN_KEY_NAME>
+```
