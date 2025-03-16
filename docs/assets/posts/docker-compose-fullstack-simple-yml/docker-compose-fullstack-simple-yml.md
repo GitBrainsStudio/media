@@ -1,4 +1,4 @@
-# Базовый docker-compose.yml для фулл-стэк проекта
+# Базовый docker-compose.yml для фуллстэк проекта
 
 docker-compose.yml
 
