@@ -126,11 +126,15 @@
       },
       {
         "id": "docker-compose-fullstack-simple-yml",
-        "name": "Базовый docker-compose.yml фулстэк проекта"
+        "name": "Базовый docker-compose.yml фуллстэк проекта"
       },
       {
         "id": "docker-build-image-github-action",
-        "name": "Build Docker image (GitHub action)"
+        "name": "Build Docker Image"
+      },
+      {
+        "id": "docker-deploy-image-github-action",
+        "name": "Deploy Docker Image"
       },
       {
         "id": "docker-compose-ssl",
@@ -139,6 +143,31 @@
       {
         "id": "docker-ghcr-login",
         "name": "Авторизация в GitHub Container Registry"
+      },
+      {
+        "id": "docker-self-hosted-runner",
+        "name": "Self-hosted runner with ci-cd jobs"
+      },
+      {
+        "id": "docker-install",
+        "name": "Установка"
+      },
+      {
+        "id": "docker-commands",
+        "name": "Полезные команды"
+      }
+    ]
+  },
+  {
+    "name": "Linux",
+    "posts": [
+      {
+        "id": "linux-remove-folder",
+        "name": "Удаление файла либо каталога"
+      },
+      {
+        "id": "linux-update-packages",
+        "name": "Обновление пакетов"
       }
     ]
   }
