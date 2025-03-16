@@ -29,3 +29,15 @@ docker rm $(docker ps -a -q)
 ```
 docker rmi $(docker images -q)
 ```
+
+Создать сеть
+
+```
+docker network create nginx
+```
+
+Список сетей
+
+```
+docker network ls
+```
