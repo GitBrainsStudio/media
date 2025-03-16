@@ -129,6 +129,10 @@
         "name": "Базовый docker-compose.yml фуллстэк проекта"
       },
       {
+        "id": "docker-compose-fullstack-simple-multiple-yml",
+        "name": "Базовый docker-compose.yml фуллстэк проекта (с разбиением)"
+      },
+      {
         "id": "docker-build-image-github-action",
         "name": "Build Docker Image"
       },
