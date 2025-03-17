@@ -172,6 +172,10 @@
       {
         "id": "linux-update-packages",
         "name": "Обновление пакетов"
+      },
+      {
+        "id": "linux-deploy-user-create",
+        "name": "Создание юзера для деплоя с ограниченными правами"
       }
     ]
   }
