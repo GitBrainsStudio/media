@@ -3,13 +3,12 @@
 docker-compose.yml для бэка
 
 ```
+name:
+  avm
 services:
   backend:
-    container_name: avm-back
     image: ghcr.io/gitbrainsstudio/avm-back:development
     command: uvicorn Main:FastApi --host 0.0.0.0 --port 8080
-    ports:
-      - "8080:8080"
     restart: always
     networks:
       - nginx_network
@@ -22,12 +21,11 @@ networks:
 docker-compose.yml для фронта
 
 ```
+name:
+  avm
 services:
   frontend:
-    container_name: avm-front
     image: ghcr.io/gitbrainsstudio/avm-front:development
-    ports:
-      - "4000:4000"
     restart: always
     networks:
       - nginx_network
@@ -65,15 +63,11 @@ server {
     resolver 127.0.0.11;
 
     location / {
-        # hack to prevent nginx to resolve container's host on start up
-        set $docker_host "avm-front";
-        proxy_pass http://$docker_host:4000;
+        proxy_pass http://avm-frontend-1:4000;
     }
 
     location /api {
-        # hack to prevent nginx to resolve container's host on start up
-        set $docker_host "avm-back";
-        proxy_pass http://$docker_host:8080;
+        proxy_pass http://avm-backend-1:8080;
     }
 }
 ```
