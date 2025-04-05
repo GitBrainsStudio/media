@@ -35,6 +35,29 @@ networks:
     external: true
 ```
 
+docker-compose.yml для mysql
+
+```
+name:
+  avm
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: avm
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
+
+volumes:
+  db:
+```
+
 docker-compose.yml для nginx
 
 ```
