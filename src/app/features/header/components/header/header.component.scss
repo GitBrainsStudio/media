@@ -1,88 +1,75 @@
-.header
-{
-    display: flex;
-    height: var(--header-height);
+.header {
+  display: flex;
+  height: var(--header-height);
 }
 
-.header__row
-{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px var(--black-050) solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px var(--black-050) solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.header__contact:not(:last-child)
-{
-    margin-right: 5px;
+.header__contact:not(:last-child) {
+  margin-right: 5px;
 }
 
-.header__title
-{
-    font-weight: 600;
+.header__title {
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
-.header__title--mobile
-{
-    display: none;
+.header__title--mobile {
+  display: none;
 }
 
-.header__logo
-{
-    display: flex;
-    align-items: center;
+.header__logo {
+  display: flex;
+  align-items: center;
 }
 
-.header__column
-{
-    align-items: center;
-    height: 100%;
+.header__column {
+  align-items: center;
+  height: 100%;
 }
 
-.header__column:not(:last-child)
-{
-    margin-right: 10px;
+.header__column:not(:last-child) {
+  margin-right: 10px;
 }
 
 .header__avatar {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.header__column--home-link
-{
-    transition: opacity .4s ease;
+.header__column--home-link {
+  transition: opacity 0.4s ease;
 }
 
-.header__column--home-link:hover
-{
-    cursor: pointer;
-    opacity: .9;
+.header__column--home-link:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
+@media screen and (max-width: 576px) {
+  .header__logo {
+    text-align: center;
+  }
 
-@media screen and (max-width:576px) {
+  .header__text,
+  .header__title {
+    display: none;
+  }
 
-    .header__logo
-    {
-        text-align: center;
-    }
-
-    .header__text, .header__title
-    {
-        display: none;
-    }
-
-    .header__title--mobile
-    {
-        display: block;
-    }
+  .header__title--mobile {
+    display: block;
+  }
 }
