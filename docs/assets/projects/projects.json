@@ -1,5 +1,39 @@
 [
   {
+    "name": "Marketplace",
+    "tags": [
+      {
+        "name": "Angular"
+      }
+    ],
+    "image": "assets/projects/images/previews/marketplace-dev.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/angular.png"
+      }
+    ],
+    "shortDescription": "Тестировал карусель без использования material",
+    "repository": "https://github.com/GitBrainsStudio/marketplace-dev",
+    "demo": "https://gitbrainsstudio.github.io/marketplace-dev/"
+  },
+  {
+    "name": "SPR",
+    "tags": [
+      {
+        "name": "Angular"
+      }
+    ],
+    "image": "assets/projects/images/previews/spr.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/angular.png"
+      }
+    ],
+    "shortDescription": "Трубы оптом в Челябинске",
+    "repository": "https://github.com/GitBrainsStudio/spr",
+    "demo": "https://gitbrainsstudio.github.io/spr/#/"
+  },
+  {
     "name": "Кресла74.рф",
     "tags": [
       {
@@ -30,6 +64,23 @@
     ],
     "shortDescription": "Сайт на котором Вы сейчас находитесь с фейковым бэком на маркдаунах",
     "repository": "https://github.com/GitBrainsStudio/media"
+  },
+  {
+    "name": "QuizPortal",
+    "tags": [
+      {
+        "name": "Angular"
+      }
+    ],
+    "image": "assets/projects/images/previews/quizportal.jpg",
+    "threads": [
+      {
+        "url": "assets/projects/images/threads/angular.png"
+      }
+    ],
+    "shortDescription": "Вопросы?",
+    "repository": "https://github.com/GitBrainsStudio/marketplace-dev",
+    "demo": "https://gitbrainsstudio.github.io/QuizPortal/#/"
   },
   {
     "name": "Lagoona",
