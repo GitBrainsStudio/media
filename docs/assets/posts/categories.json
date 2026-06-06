@@ -110,6 +110,10 @@
       {
         "id": "prettier-formatter-for-vs-code",
         "name": "Как сделать форматирование кода с помощью Prettier в Visual Studio Code"
+      },
+      {
+        "id": "angular-prettier-stylelint-setup",
+        "name": "Настройка Prettier и Stylelint в Angular 22 для автоматического форматирования кода"
       }
     ]
   },
