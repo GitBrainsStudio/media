@@ -48,13 +48,21 @@
   background: transparent;
   color: var(--black-500);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.header__icon-link:hover,
-.header__icon-btn:hover {
-  color: var(--orange-800);
-  border-color: var(--orange-800);
+.header__icon-link:focus:not(:focus-visible),
+.header__icon-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (hover: hover) {
+  .header__icon-link:hover,
+  .header__icon-btn:hover {
+    color: var(--orange-800);
+    border-color: var(--orange-800);
+  }
 }
 
 .header__icon-link {
