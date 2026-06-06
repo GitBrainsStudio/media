@@ -19,6 +19,10 @@ export class PostDetailsPageComponent implements OnInit, OnDestroy {
   src = `assets/posts/${this.id}/${this.id}.md`;
   categories:Category[] | null = null;
 
+  get postCount(): number {
+    return this.categories?.reduce((sum, c) => sum + c.posts.length, 0) ?? 0;
+  }
+
   constructor(
     private activatedRoute:ActivatedRoute,
     private categoryService:CategoryService) { }

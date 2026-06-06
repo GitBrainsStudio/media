@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   isDark = false;
+  @HostBinding('class.header--hidden') hidden = false;
+  private lastScrollY = 0;
 
   ngOnInit(): void {
     this.isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  }
+
+  @HostListener('window:scroll')
+  onScroll(): void {
+    const scrollY = window.scrollY;
+    if (scrollY > this.lastScrollY && scrollY > 60) {
+      this.hidden = true;
+    } else if (scrollY === 0) {
+      this.hidden = false;
+    }
+    this.lastScrollY = scrollY;
   }
 
   toggleTheme(): void {

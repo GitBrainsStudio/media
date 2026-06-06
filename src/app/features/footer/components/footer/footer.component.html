@@ -1,13 +1,30 @@
+<nav class="bottom-bar">
+  <a class="bottom-bar__item" routerLink="/" (click)="scrollToTop()">
+    <i class="fas fa-house bottom-bar__icon"></i>
+    <span class="bottom-bar__label">Главная</span>
+  </a>
+  <a class="bottom-bar__item" routerLink="/" (click)="scrollTo('posts')">
+    <i class="fas fa-file-lines bottom-bar__icon"></i>
+    <span class="bottom-bar__label">
+      Статьи
+      <span class="bottom-bar__badge" *ngIf="postCount > 0">{{ postCount }}</span>
+    </span>
+  </a>
+  <a class="bottom-bar__item" routerLink="/" (click)="scrollTo('projects')">
+    <i class="fas fa-laptop-code bottom-bar__icon"></i>
+    <span class="bottom-bar__label">
+      Проекты
+      <span class="bottom-bar__badge" *ngIf="projectCount > 0">{{ projectCount }}</span>
+    </span>
+  </a>
+</nav>
+
 <footer class="footer">
-    <div class="container footer__row">
-        @GitBrainsStudio
-        <div class="footer__contacts">
-            <a class="footer__contact text-link text-link--blue" href="https://github.com/GitBrainsStudio">
-                GitHub
-            </a>
-            <a class="footer__contact text-link text-link--blue" href="mailto:gitbrains@gmail.com">
-                Почта
-            </a>
-        </div>
+  <div class="container footer__row">
+    @GitBrainsStudio
+    <div class="footer__contacts">
+      <a class="footer__contact text-link text-link--blue" href="https://github.com/GitBrainsStudio">GitHub</a>
+      <a class="footer__contact text-link text-link--blue" href="mailto:gitbrains@gmail.com">Почта</a>
     </div>
+  </div>
 </footer>
