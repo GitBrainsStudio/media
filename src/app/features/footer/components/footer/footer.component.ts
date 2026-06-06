@@ -20,7 +20,9 @@ export class FooterComponent {
   }
 
   scrollToTop(): void {
+    document.body.classList.add('suppress-header');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => document.body.classList.remove('suppress-header'), 800);
   }
 
 }

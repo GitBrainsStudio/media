@@ -1,3 +1,8 @@
+#posts,
+#projects {
+  scroll-margin-top: calc(0.625rem);
+}
+
 .page-section__title {
   margin-bottom: var(--space-2xs);
 }

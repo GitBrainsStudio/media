@@ -7,7 +7,7 @@ import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isDark = false;
+  isDark = true;
   @HostBinding('class.header--hidden') hidden = false;
   private lastScrollY = 0;
 
@@ -20,8 +20,10 @@ export class HeaderComponent implements OnInit {
     const scrollY = window.scrollY;
     if (scrollY > this.lastScrollY && scrollY > 60) {
       this.hidden = true;
-    } else if (scrollY < this.lastScrollY && !document.body.classList.contains('suppress-header')) {
-      this.hidden = false;
+    } else if (scrollY < this.lastScrollY || scrollY === 0) {
+      if (scrollY === 0 || !document.body.classList.contains('suppress-header')) {
+        this.hidden = false;
+      }
     }
     this.lastScrollY = scrollY;
   }
