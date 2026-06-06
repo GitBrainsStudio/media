@@ -3,19 +3,16 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: var(--space-sm);
 }
 
 .project-preview-card-collection__item {
-  margin-right: 20px;
-  margin-bottom: 10px;
+  margin-right: 1.25rem;
+  margin-bottom: var(--space-sm);
 }
 
-.project-preview-card-collection__item--skeleton {
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 36em) {
   .project-preview-card-collection__item--skeleton {
     width: 100%;
   }

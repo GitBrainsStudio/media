@@ -1,15 +1,12 @@
-.post-preview-card__tags
-{
-    display: flex;
-    flex-wrap: wrap;
+.post-preview-card__tags {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.post-preview-card__tag
-{
-    margin-bottom: 5px;
+.post-preview-card__tag {
+  margin-bottom: var(--space-2xs);
 }
 
-.post-preview-card__tag:not(:last-child)
-{
-    margin-right: 5px;
+.post-preview-card__tag:not(:last-child) {
+  margin-right: var(--space-2xs);
 }

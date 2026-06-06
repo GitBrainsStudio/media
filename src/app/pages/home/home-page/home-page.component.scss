@@ -1,13 +1,13 @@
 .page-section__title {
-  margin-bottom: 5px;
+  margin-bottom: var(--space-2xs);
 }
 
 .page-section__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 36em) {
   .page-section__content {
     width: 100%;
   }
@@ -16,6 +16,7 @@
   .page-section__description {
     text-align: center;
   }
+
   .page-section--mobile {
     display: flex;
     flex-direction: column;
