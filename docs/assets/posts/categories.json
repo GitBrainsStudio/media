@@ -182,5 +182,14 @@
         "name": "Создание юзера для деплоя с ограниченными правами"
       }
     ]
+  },
+  {
+    "name": "Node",
+    "posts": [
+      {
+        "id": "nvm-windows-guide",
+        "name": "Установка nvm-windows и Node.js"
+      }
+    ]
   }
 ]

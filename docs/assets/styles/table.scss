@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  width: 100%;
+  margin-block: var(--space-base);
+}
+
+th,
+td {
+  border: 1px solid var(--black-075);
+  padding: var(--space-xs) var(--space-sm);
+  text-align: left;
+}
+
+th {
+  background-color: var(--black-025);
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--black-025);
+}
