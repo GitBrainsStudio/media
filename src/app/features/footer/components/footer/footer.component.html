@@ -1,14 +1,21 @@
 <nav class="bottom-bar">
   <a class="bottom-bar__item" routerLink="/" (click)="scrollToTop()">
     <i class="fas fa-house bottom-bar__icon"></i>
+    <span class="bottom-bar__label">Главная</span>
   </a>
   <a class="bottom-bar__item" routerLink="/" (click)="scrollTo('posts')">
     <i class="fas fa-file-lines bottom-bar__icon"></i>
-    <span class="bottom-bar__badge" *ngIf="postCount > 0">{{ postCount }}</span>
+    <span class="bottom-bar__label">
+      Заметки
+      <span class="bottom-bar__badge" *ngIf="postCount > 0">{{ postCount }}</span>
+    </span>
   </a>
   <a class="bottom-bar__item" routerLink="/" (click)="scrollTo('projects')">
     <i class="fas fa-laptop-code bottom-bar__icon"></i>
-    <span class="bottom-bar__badge" *ngIf="projectCount > 0">{{ projectCount }}</span>
+    <span class="bottom-bar__label">
+      Проекты
+      <span class="bottom-bar__badge" *ngIf="projectCount > 0">{{ projectCount }}</span>
+    </span>
   </a>
 </nav>
 
