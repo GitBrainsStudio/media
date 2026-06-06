@@ -126,29 +126,34 @@
 }
 
 [data-theme='dark'] {
-  --bg: hsl(210, 8%, 8%);
-  --black-025: hsl(210, 8%, 10%);
-  --black-050: hsl(210, 8%, 12%);
-  --black-075: hsl(210, 8%, 16%);
-  --black-100: hsl(210, 8%, 20%);
-  --black-150: hsl(210, 8%, 24%);
-  --black-200: hsl(210, 8%, 28%);
-  --black-300: hsl(210, 8%, 35%);
-  --black-350: hsl(210, 8%, 42%);
-  --black-400: hsl(210, 8%, 50%);
-  --black-500: hsl(210, 8%, 60%);
-  --black-600: hsl(210, 8%, 70%);
-  --black-700: hsl(210, 8%, 78%);
-  --black-750: hsl(210, 8%, 84%);
-  --black-800: hsl(210, 8%, 90%);
-  --black-900: hsl(210, 8%, 95%);
+  --bg: hsl(210, 8%, 9%);
+  --surface: hsl(210, 8%, 12%);
 
-  --blue: hsl(206, 85%, 65%);
-  --blue-100: hsl(206, 50%, 25%);
-  --orange-800: hsl(27, 80%, 70%);
-  --aqua: hsl(200, 60%, 65%);
+  --black-025: hsl(210, 8%, 12%);
+  --black-050: hsl(210, 8%, 15%);
+  --black-075: hsl(210, 8%, 20%);
+  --black-100: hsl(210, 8%, 26%);
+  --black-150: hsl(210, 8%, 32%);
+  --black-200: hsl(210, 8%, 38%);
+  --black-300: hsl(210, 8%, 45%);
+  --black-350: hsl(210, 8%, 52%);
+  --black-400: hsl(210, 8%, 58%);
+  --black-500: hsl(210, 8%, 65%);
+  --black-600: hsl(210, 8%, 72%);
+  --black-700: hsl(210, 8%, 80%);
+  --black-750: hsl(210, 8%, 86%);
+  --black-800: hsl(210, 8%, 92%);
+  --black-900: hsl(210, 8%, 97%);
 
-  --shadow-card: rgba(0, 0, 0, 0.4) 0px 8px 24px;
+  --blue: hsl(206, 75%, 60%);
+  --blue-100: hsl(206, 40%, 22%);
+  --orange-800: hsl(27, 70%, 60%);
+  --aqua: hsl(200, 45%, 50%);
+
+  --shadow-card: rgba(0, 0, 0, 0.5) 0px 8px 24px;
+
+  --skeleton-loader-background: hsl(210, 8%, 16%);
+  --skeleton-loader-animation-background: hsl(210, 8%, 22%);
 }
 
 $breakpoint-sm: 36em;
