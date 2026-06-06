@@ -1,13 +1,12 @@
-.tag
-{
-    display: inline-flex;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 5px;
-    background-color: var(--aqua);
-    color: var(--white);
+.tag {
+  display: inline-flex;
+  padding: var(--space-2xs) var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--radius-sm);
+  background-color: var(--aqua);
+  color: var(--white);
 }
