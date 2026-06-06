@@ -16,6 +16,14 @@ export class HomePageComponent implements OnInit, OnDestroy {
   categories:Category[] | null = null;
   projects:Project[] | null = null;
 
+  get postCount(): number {
+    return this.categories?.reduce((sum, c) => sum + c.posts.length, 0) ?? 0;
+  }
+
+  get projectCount(): number {
+    return this.projects?.length ?? 0;
+  }
+
   constructor(
     private categoryService:CategoryService,
     private projectService:ProjectService) { }

@@ -3,7 +3,7 @@
     <app-header></app-header>
   </div>
 
-  <section class="container page-section page-section--mobile">
+  <section id="posts" class="container page-section page-section--mobile">
     <h1 class="page-section__title">Заметки 💪</h1>
     <p class="page-section__description">
       Иногда сюда даже что-то добавляется.
@@ -14,7 +14,7 @@
     </div>
   </section>
 
-  <section class="container page-section page-section--mobile">
+  <section id="projects" class="container page-section page-section--mobile">
     <h1 class="page-section__title">Свободное время 👌</h1>
     <p class="page-section__description">
       Маленькая часть из непонятной кучи репозиториев. Пока оставляем.
@@ -25,4 +25,4 @@
     </div>
   </section>
 </main>
-<app-footer></app-footer>
+<app-footer [postCount]="postCount" [projectCount]="projectCount"></app-footer>

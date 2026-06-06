@@ -17,3 +17,9 @@ main {
   );
   margin-bottom: var(--main-margin-bottom);
 }
+
+@media screen and (max-width: 36em) {
+  main {
+    padding-bottom: 4rem;
+  }
+}
