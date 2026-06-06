@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     const scrollY = window.scrollY;
     if (scrollY > this.lastScrollY && scrollY > 60) {
       this.hidden = true;
-    } else if (scrollY === 0) {
+    } else if (scrollY < this.lastScrollY && !document.body.classList.contains('suppress-header')) {
       this.hidden = false;
     }
     this.lastScrollY = scrollY;

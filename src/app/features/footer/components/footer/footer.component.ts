@@ -13,7 +13,9 @@ export class FooterComponent {
   scrollTo(id: string): void {
     const el = document.getElementById(id);
     if (el) {
+      document.body.classList.add('suppress-header');
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setTimeout(() => document.body.classList.remove('suppress-header'), 800);
     }
   }
 

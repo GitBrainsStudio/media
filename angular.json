@@ -27,7 +27,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/assets/images/favicon.png", "src/assets"],
-            "styles": ["src/styles.scss", "node_modules/@fortawesome/fontawesome-free/css/all.min.css"],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -90,7 +93,10 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss", "node_modules/@fortawesome/fontawesome-free/css/all.min.css"],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+            ],
             "scripts": []
           }
         }
