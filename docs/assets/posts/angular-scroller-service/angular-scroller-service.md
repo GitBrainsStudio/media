@@ -1,7 +1,5 @@
 # Плавный скролл к необходимому элементу через службу
 
-🍗
-
 ```
 import { Injectable } from '@angular/core';
 
