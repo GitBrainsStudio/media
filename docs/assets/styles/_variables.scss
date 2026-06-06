@@ -121,6 +121,34 @@
   --main-margin-bottom: 6.25rem;
 
   --shadow-card: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --bg: var(--white);
+}
+
+[data-theme='dark'] {
+  --bg: hsl(210, 8%, 8%);
+  --black-025: hsl(210, 8%, 10%);
+  --black-050: hsl(210, 8%, 12%);
+  --black-075: hsl(210, 8%, 16%);
+  --black-100: hsl(210, 8%, 20%);
+  --black-150: hsl(210, 8%, 24%);
+  --black-200: hsl(210, 8%, 28%);
+  --black-300: hsl(210, 8%, 35%);
+  --black-350: hsl(210, 8%, 42%);
+  --black-400: hsl(210, 8%, 50%);
+  --black-500: hsl(210, 8%, 60%);
+  --black-600: hsl(210, 8%, 70%);
+  --black-700: hsl(210, 8%, 78%);
+  --black-750: hsl(210, 8%, 84%);
+  --black-800: hsl(210, 8%, 90%);
+  --black-900: hsl(210, 8%, 95%);
+
+  --blue: hsl(206, 85%, 65%);
+  --blue-100: hsl(206, 50%, 25%);
+  --orange-800: hsl(27, 80%, 70%);
+  --aqua: hsl(200, 60%, 65%);
+
+  --shadow-card: rgba(0, 0, 0, 0.4) 0px 8px 24px;
 }
 
 $breakpoint-sm: 36em;

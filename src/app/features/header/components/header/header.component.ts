@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isOpen:boolean = false;
-
-  constructor() { }
+  isDark = false;
 
   ngOnInit(): void {
+    this.isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  }
+
+  toggleTheme(): void {
+    this.isDark = !this.isDark;
+    document.documentElement.setAttribute('data-theme', this.isDark ? 'dark' : '');
+    localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
   }
 
 }

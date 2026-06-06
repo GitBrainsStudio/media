@@ -48,6 +48,32 @@
   object-fit: cover;
 }
 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin-left: var(--space-xs);
+  border: 1px solid var(--black-075);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--black-500);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--orange-800);
+  border-color: var(--orange-800);
+}
+
+.theme-toggle__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
 .header__column--home-link {
   transition: opacity 0.4s ease;
 }
