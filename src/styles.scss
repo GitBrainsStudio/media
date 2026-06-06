@@ -11,6 +11,7 @@
 @use 'assets/styles/breadcrumb';
 
 main {
+  padding-top: var(--header-height);
   min-height: calc(
     100vh - var(--footer-height) - var(--main-margin-bottom) - 1px
   );
